@@ -1,0 +1,55 @@
+.header{
+  font-size: 20px; /*РАЗМЕР ШРИфта*/
+  /*text-align: center; /*класс от bootstrap не работает*/
+  line-height: 1.5;
+  margin: 60px auto;
+}
+.header span{
+  display: block;/*Блочный элемент, выталкивает на новую строку*/
+}
+
+.container, .col-lg-6{
+  //border: 2px solid red;
+}
+
+.section{
+  /*background-color: #ccc;*/
+  padding: 30px 0;
+  /*text-align: center;*/
+}
+
+.form-header, .section-header{
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+ .form{
+   border: 5px solid #2727d9;
+   padding: 45px 20px; /*бока верха*/
+ }
+ .form-btn{
+   margin: 10px auto; /*top bottom-10px; right left-auto*/
+   background-color: #2727d9;
+ }
+ .form input{
+   margin-bottom: 12px;
+ }
+
+ .feature{
+  margin: 60px auto;
+ }
+
+ .feature p{
+  margin-top: 20px;
+ }
+
+ .after-btn{
+  background-color: #2727d9;
+  margin: 10px auto;
+  }
+  
+  /*адаптация для маленьких экранов*/
+ .video{  /*отдление видео от формы тк на маленьком экране оно идет в колонку  (9 lesson) 28:32*/
+  margin-bottom: 20px;
+ }

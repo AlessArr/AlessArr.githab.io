@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Мой первый сайт</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="section">
+    <div class="container">
+      <!--Первая строка(row) по загаловок-->
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3"> 
+            <h1 class="header text-center"> <!--класс от bootstrap-->
+            <span>Получите видео инструкцию</span>
+            <strong class="text-uppercase">Как заработать свой первый миллион</strong>
+          </h1>
+        </div>
+      </div>
+      <!--Вторая строка под видео и форму-->
+      <div class="row">
+        <div class="col-lg-6 offset-lg-1 col-md-8 offset-md-2"> <!-- md - адаптация под маленькие экраны-->
+          <div class="video">
+            <iframe width="100%" height="309" src="https://www.youtube.com/embed/8KIh_eyy2Lo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <!--видео должно растянутся на 100% на 6 колонок не смотря на размер экрана-->
+          </div>
+        </div>
+        <div class="col-lg-4 offset-lg-0 col-md-8 offset-md-2">  <!--форма занимает 4 колонки; md - адаптация под маленькие экраны-->
+          <div class="form">
+            <p class="form-header text-center">Введите ваш email</p>
+            <form action="#">  <!--???????-->
+              <input type="text" class="form-control input-lg" placeholder="Ваше имя">
+              <input type="text" class="form-control input-lg" placeholder="Пароль">
+              <button class="btn btn-primary btn-lg btn-block form-btn">Получить инструкцию</button> <!--bootstrap-->
+              <!--form-btn мой класс(не bootstrap)для css-->
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Следующий экран-->
+  <div class="section">
+    <div class="container">
+          <!--Строка-->
+    <div class="row">
+      <div class="col-lg-12 col-xs-12 col-sm-12">
+       <!--Если текст занимает одну колонку и весь помещается в одну строку, то ему можно--> 
+       <!--отать все(12) колонки не отсчитывая сколько он занимает. Применили для всех экранов-->
+      <h2 class="section-header text-uppercase text-center">Почему нужно сделать это сейчас?</h2> 
+      </div>
+    </div>
+    <!--Блок с преимуществами-->
+    <div class="feature text-center">
+      <div class="row">
+        <!--.col-lg-3*4>.feature-box>img[src="img/$.png" alt="$ преимущество" width=150px]+p{Первое преимущество}-->
+        <div class="col-lg-3 col-md-6">
+          <div class="feature-box">
+            <img src="img/1.png" alt="1 преимущество" width="150px">
+            <p>Первое преимущество</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="feature-box">
+            <img src="img/2.png" alt="2 преимущество" width="150px">
+            <p>Второе преимущество</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="feature-box">
+            <img src="img/3.png" alt="3 преимущество" width="150px">
+            <p>Третье преимущество</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="feature-box">
+            <img src="img/4.png" alt="4 преимущество" width="150px">
+            <p>Четвертое преимущество</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Кнопка получить инструкцию-->
+    <div class="col-lg-12 text-center">
+    <button class="btn btn-primary btn-lg after-btn">Получить инструкцию</button>  <!--кнопка не посередине???-->
+    <!--В отличии от предыдещей кнопки убрала btn-block который растягивал кнопку на весь блок (12 колонок) и добавили center-block (из bootstrap)-->
+    </div>
+    </div>
+  </div>
+</body>
+</html>
